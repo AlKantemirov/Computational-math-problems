@@ -1,0 +1,21 @@
+cabal-version:      3.0
+name:               1x1-summation-error
+version:            0.1.0.0
+license:            MIT
+license-file:       LICENSE
+author:             AlKantemirov
+maintainer:         kantemirov.lescha@yandex.ru
+category:           Math
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable 1lab
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.17.2.1,
+                      gtk >= 0.15.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
